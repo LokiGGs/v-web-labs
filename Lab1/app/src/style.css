@@ -1,0 +1,54 @@
+header ul{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0 10px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid black;
+	width: 98%;
+	margin: auto;
+}
+
+.flushed-right{
+	display: flex;
+	gap: 15px;
+}
+
+.flushed-right img{
+	width: 32px;
+	height: 32px;
+}
+
+#home img{
+	width: 32px;
+	height: 32px;
+}
+
+form img{
+	width: 20px;
+	height: 20px;
+}
+
+#search-bar{
+	display: flex;
+	border-style: solid;
+	padding: 4px;
+	border: 1px solid black;
+	border-radius: 12px;
+}
+
+#search-bar input{
+	outline: none;
+	border: none;
+	width: 150px;
+	transition: .3s linear;
+}
+
+#search-bar input:focus{
+	width: 200px;
+}
+
+#search-bar button {
+	border: none;
+	background-color: white;
+}
