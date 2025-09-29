@@ -11,7 +11,7 @@ html {
 header {
 	border-bottom: 2px solid black;
 	padding-bottom: 8px;
-	margin: 0 -10px;
+	margin: 0 0px;
 }
 
 header ul {
@@ -31,9 +31,33 @@ body {
 	margin-bottom: 30px;
 }
 
+.products{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 50px;
+}
+
 .product-card {
 	width: 196px;
 	height: 300px;
+}
+
+.like-product img {
+	width: 32px;
+	height: 32px;
+}
+
+.like-product {
+	transition: .3s;
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+}
+
+.like-product:hover {
+	scale: 1.1;
+	transition: .3s;
 }
 
 .product-card p {
@@ -41,15 +65,17 @@ body {
 	margin-top: 0px;
 }
 
+.old-price {
+	font-size: 14px;
+	text-decoration: line-through;
+	color: gray;
+}
+
 .product-image {
 	width: 196px;
 	height: 196px;
 	border: 2px solid black;
-	transition: .3s ease-in;
-}
-
-.product-image:hover {
-	scale: 1.05;
+	position: relative;
 }
 
 .product-price {
@@ -75,7 +101,6 @@ body {
 
 footer {
 	border-top: 2px solid black;
-	margin: 0 -10px;
 }
 
 footer ul {
