@@ -1,31 +1,92 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-    <link rel="stylesheet" href="src/style.css">
-    <title>Лабораторная работа 1</title>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Лабораторная работа 1</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
       <ul>
         <li><a href="/" id="home">
-          <img src="public/home.svg" alt="Домой">
-        </a></li>
-        <li><form action="" method="get" id="search-bar">
-          <button type="submit">
-            <img src="public/search.svg" alt="Поиск">
-          </button>
-          <input name="srch" placeholder="Поиск.." type="search">
-        </form></li>
+            <img src="public/home.svg" alt="Домой">
+          </a></li>
+        <li>
+          <form action="" method="get" id="search-bar">
+            <button type="submit">
+              <img src="public/search.svg" alt="Поиск">
+            </button>
+            <input name="srch" placeholder="Поиск.." type="search">
+          </form>
+        </li>
         <div class="flushed-right">
           <li><a href="/" id="liked">
-            <img src="public/heart.svg" alt="Избранное">
-          </a></li>
+              <img src="public/heart.svg" alt="Избранное">
+            </a></li>
           <li><a href="/" id="cart">
-            <img src="public/shopping-cart.svg" alt="Корзина">
-          </a></li>
+              <img src="public/shopping-cart.svg" alt="Корзина">
+            </a></li>
         </div>
       </ul>
-    </header>
-  </body>
+  </header>
+  </div>
+
+  <div class="main">
+    <div class="container">
+
+      <h1 class="category">Худи</h1>
+
+      <div class="products" id="hoodies">
+        <div class="product-card">
+          <div class="product-image">
+
+          </div>
+          <div class="product-price">
+            <span class="current-price"></span>
+            <span class="old-price">1999 ₽</span>
+          </div>
+
+          <div class="product-name">
+            <p>Худи с принтом</p>
+          </div>
+
+          <button class="add-to-cart-button">В корзину</button>
+        </div>
+      </div>
+      <h1 class="category">Шорты</h1>
+
+      <div class="product-card" id="shorts">
+        <div class="product-image">
+
+        </div>
+        <div class="product-price">
+          <span class="current-price"></span>
+          <span class="old-price">1999 ₽</span>
+        </div>
+
+        <div class="product-name">
+          <p>Широкие шорты</p>
+        </div>
+
+        <button class="add-to-cart-button">В корзину</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li>&copy; 2025 Магазин</li>
+        <li>Политика и безопасность</li>
+        <li>Cookie</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
